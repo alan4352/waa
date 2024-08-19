@@ -1,27 +1,29 @@
-    const button = document.getElementById('button');
-    const fondo = document.getElementById('body');
-    const titulo = document.getElementById('titulo');
-    const texto = document.getElementById('letra');
-    const historia = document.getElementById('historia');
-    function botonaso(){
-        if(fondo.style.backgroundColor == '#4F0112'){
-        fondo.style.backgroundColor = 'black';
-        texto.style.color = 'white';
-        historia.style.color = 'white';
-        }else{
-        fondo.style.backgroundColor = '#4F0112';
-        texto.style.color = 'black';
-        historia.style.color = 'black';
-        }
+let btnReadMore = document.getElementById("read-more");
+let subir = document.getElementById("subir");
+let texto = document.getElementsByTagName(".historia")
+let historia = document.getElementById("Historia");
+let historia1 = document.getElementById("Historia1");
+let barra = document.getElementById("barra");
+
+btnReadMore.addEventListener("click", function() {
+    historia.classList.toggle("show-more-history");
+    historia1.classList.toggle("show-more-history");
+    barra.classList.toggle("show-more-history");
+})
+// Mostrar u ocultar el botón de acuerdo con el desplazamiento de la página
+window.addEventListener('scroll', function() {
+    const button = document.getElementById('scrollToTopBtn');
+    if (window.scrollY > 200) { // Muestra el botón si se ha desplazado más de 200px
+        button.classList.add('show');
+    } else {
+        button.classList.remove('show');
     }
-    button.addEventListener('click', function () {
-        if(fondo.style.backgroundColor == '#4F0112'){
-            fondo.style.backgroundColor = 'black';
-            texto.style.color = 'white';
-            historia.style.color = 'white';
-            }else{
-            fondo.style.backgroundColor = '#4F0112';
-            texto.style.color = 'black';
-            historia.style.color = 'black';
-            }
+});
+
+// Función para desplazar hacia arriba
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
+}
