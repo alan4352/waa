@@ -70,3 +70,31 @@ body {
 .card__link {
     text-decoration: none;
 }
+/* Estilos para el botón flotante */
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+.scrollToTopBtn.show {
+    opacity: 1;
+}
