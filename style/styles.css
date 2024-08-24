@@ -59,20 +59,6 @@ ul li {
     padding: 5px 0;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
 P, h1, h2, h3, h4{
     Color: white;
 }
@@ -93,7 +79,6 @@ header, section, footer {
     border-radius: 5px;
 }
 
-/* Diseño específico para dispositivos móviles */
 @media (max-width: 600px) {
     header h1 {
         font-size: 1.5em;
@@ -109,6 +94,47 @@ header, section, footer {
         font-size: 0.9em;
     }
 }
-.footer{
+body{
+    background-color: #1b262c;
+}
+p, h1, h2, h3, h4{
+    color: seashell;
+}
+.cricu{
+    width: 15%;
+    height: 20%;
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+}
+h3{
+    text-align: center;
+}
+hr {
+    width: 10%;
+    border-top: 5px solid rgb(255, 196, 0);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+
+}
+.chic{
+    width: 7%;
+    border-top: 5px solid rgb(255, 227, 176);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+footer{
+    margin-top: 2rem;
     background-color: #333;
+}
+.letr{
+margin-top: 1rem;
+font-size: 14px;
+}
+.separa{
+display: flex;
+flex-direction: column;
+}
+.rese{
+    background-color: #1b262c;
 }
