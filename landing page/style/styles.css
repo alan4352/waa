@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #4F0112;
+    background-color:  #1b262c;
+    text-align: center;
 }
 
 header {
@@ -38,7 +39,7 @@ button:hover {
 section {
     padding: 20px;
     margin: 10px;
-    background: #4F0112;
+    background:  #1b262c;
     border-radius: 5px;
     color: antiquewhite;
 }
@@ -71,4 +72,17 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+}
+P, h1, h2, h3, h4{
+    Color: white;
+}
+    @keyframes cambiacolor {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: red; }
+    }
+    .cambio:hover{
+        animation: cambiacolor 5s infinite;
 }
